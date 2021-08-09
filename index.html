@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		body{
+	background-image: url(image/moon.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+		p{
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			margin: 160px 100px 20px 100px;
+		}
+#p2{
+	color: white;
+	font-size: 22px;
+	text-align: left;
+}
+	
+	</style>
+</head>
+<body>
+	<meta name="description" content="Mandip's webpage">
+    <meta http-equiv="refresh" content="50">
+	<div class="nav">
+<a href="index.html">Home</a>
+<a href="html/Blog.html">Blog</a>
+<a href="html/Research.html">Research</a>
+<a href="html/CV.html">CV</a>
+<a href="html/Contact.html">Contact</a>
+
+</div>
+<br>
+<p> Welcome to my web page</p><br>
+<p id="p2">My name is Mandip Thapa and this web page is designed by me.  <br> In this web page<span id="dots">...</span> <span id="more">you can observe my blogs, you can observe my reusme.<br> You can also feel free to contact me by filling the form in <i>contact</i> section.<br>
+Hope you will like this page. Keep visiting my page<br>
+<strong>Thank you</strong>.
+</span>
+</p2><br>
+<button type="button"id="read" onclick="read()">Read Less</button>
+<script type="text/javascript">
+	var i=0;
+	function read(){
+      if (!i){
+      	document.getElementById("more").style.
+      	 display="inline";
+      	 document.getElementById("dots").style.
+      	 display="none";
+      	 document.getElementById("read").innerHTML="Read Less";
+      	 i=1;
+
+      }
+      else{
+      		document.getElementById("more").style.
+      	 display="none";
+      	 document.getElementById("dots").style.
+      	 display="inline";
+      	 document.getElementById("read").innerHTML="Read More";
+      	 i=0;
+
+      }
+
+	}
+</script>	
+</body>
+	<footer style="color: white; text-align: center;">
+		&copy; Mandip Thapa
+	</footer>
+</html>
